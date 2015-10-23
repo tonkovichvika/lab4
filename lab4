@@ -1,0 +1,21 @@
+#include "stdafx.h"
+
+#include "Film.h"
+#include "Hfilm.h"
+#include "Programma.h"
+#include <iostream> 
+using namespace std; 
+
+Programm* Programm::head=NULL; 
+int _tmain(int argc, _TCHAR* argv[])
+{
+	setlocale(LC_ALL, "rus");
+
+	Hfilm hfilm("Артист", "5 часов");
+	
+	hfilm.Print();
+
+	Film::show();
+
+	return 0;
+}
